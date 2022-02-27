@@ -41,6 +41,64 @@ body {
     color: silver;
 }
 
+/* typer */
+/* style the typewriter text specifically if you want */
+.typewriter_text {
+  color: silver;
+}
+/* Style the blinking cursor after the text */
+.typewriter_text:after {
+  content: "|";
+  display: inline-block;
+  color: silver;
+  -webkit-animation: 1s blink step-end infinite;
+  -moz-animation: 1s blink step-end infinite;
+  -ms-animation: 1s blink step-end infinite;
+  -o-animation: 1s blink step-end infinite;
+  animation: 1s blink step-end infinite;
+}
+/* Define the blink animation that runs */
+@keyframes blink {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: black;
+  }
+}
+@-moz-keyframes blink {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: black;
+  }
+}
+@-webkit-keyframes blink {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: black;
+  }
+}
+@-ms-keyframes blink {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: black;
+  }
+}
+@-o-keyframes blink {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: black;
+  }
+}
+/* stars */
 html {
   height: 100%;
   background: radial-gradient(#1b2735 0%, #090a0f 100%);
