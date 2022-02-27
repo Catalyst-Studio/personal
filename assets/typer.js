@@ -1,84 +1,56 @@
-(function ($) {
-    // writes the string
-    //
-    function typeString($target, string, cursor, delaytyping, calllback) {
-      $target.html(function (_, html) {
-        return html + string[cursor];
-      });
+var TxtRotate = function(el, toRotate, period) {
+  this.toRotate = toRotate;
+  this.el = el;
+  this.loopNum = 0;
+  this.period = parseInt(period, 10) || 2000;
+  this.txt = '';
+  this.tick();
+  this.isDeleting = false;
+};
 
-      if (cursor < string.length - 1) {
-        setTimeout(function () {
-          typeString($target, string, cursor + 1, delaytyping, calllback);
-        }, delaytyping);
-      }
-      else {
-        calllback();
-      }
-    }
+TxtRotate.prototype.tick = function() {
+  var i = this.loopNum % this.toRotate.length;
+  var fullTxt = this.toRotate[i];
 
-    // clears the string after typing it
-    function deleteString($target, delaydeleting, callback) {
-      var length;
-
-      $target.html(function (_, html) {
-        length = html.length;
-        return html.substr(0, length - 1);
-      });
-
-      if (length > 1) {
-        setTimeout(function () {
-          deleteString($target, delaydeleting, callback);
-        }, delaydeleting);
-      }
-      else {
-        callback();
-      }
-    }
-
-    // jQuery hook
-    $.fn.extend({
-      typewritereffect: function (opts) {
-        var settings = $.extend({}, $.typewritereffect.defaults, opts);
-
-        return $(this).each(function () {
-          (function loop($tar, idx) {
-            // type
-            typeString($tar, settings.text[idx], 0, settings.delaytyping, function () {
-              // delete
-              setTimeout(function () {
-                deleteString($tar, settings.delaydeleting, function () {
-                  loop($tar, (idx + 1) % settings.text.length);
-                });
-              }, settings.pause);
-            });
-            
-          }($(this), 0));
-        });
-      }
-    });
-
-    // Here you can set the default timings for the typewriter effects
-    // 1) delaytyping: number of milliseconds between each character being typed
-    // 2) delaydeleting: number of milliseconds between each character being removed
-    // 3) pause: number of milliseconds to pause after a line is fully typed
-    $.extend({
-      typewritereffect: {
-        defaults: {
-          delaytyping: 150,
-          delaydeleting: 50,
-          pause: 1000,
-          text: []
-        }
-      }
-    });
-  }(jQuery));
-
-  jQuery(document).ready(function($) {
-
-    // This bit types the text into our element with ID 'typewriter'
-    // Update the values in the text array to display the text you want
-    $('#typewriter').typewritereffect({
-      text: ['Full Stack Developer.','Front-End Specialist.','Java Developer.','Designer.','Editor.']
-    });
+  if (this.isDeleting) {
+    this.txt = fullTxt.substring(0, this.txt.length - 1);
+  } else {
+    this.txt = fullTxt.substring(0, this.txt.length + 1);
   }
-  )
+
+  this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+
+  var that = this;
+  var delta = 300 - Math.random() * 100;
+
+  if (this.isDeleting) { delta /= 2; }
+
+  if (!this.isDeleting && this.txt === fullTxt) {
+    delta = this.period;
+    this.isDeleting = true;
+  } else if (this.isDeleting && this.txt === '') {
+    this.isDeleting = false;
+    this.loopNum++;
+    delta = 500;
+  }
+
+  setTimeout(function() {
+    that.tick();
+  }, delta);
+};
+
+window.onload = function() {
+  var elements = document.getElementsByClassName('txt-rotate');
+  for (var i=0; i<elements.length; i++) {
+    var toRotate = elements[i].getAttribute('data-rotate');
+    var period = elements[i].getAttribute('data-period');
+    if (toRotate) {
+      new TxtRotate(elements[i], JSON.parse(toRotate), period);
+    }
+  }
+  // INJECT CSS
+  var css = document.createElement("style");
+  css.type = "text/css";
+  css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #666 }";
+  document.body.appendChild(css);
+};
