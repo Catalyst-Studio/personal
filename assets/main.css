@@ -47,7 +47,7 @@ body {
 /* second level */
 .second {
   background-color: black;
-  opacity: 10%;
+  border-radius: 10px;
 }
 
 .second h3 {
@@ -59,13 +59,17 @@ body {
 .second img {
   opacity: 100%;
 }
+
+.left {
+  justify-content: left;
+}
+
 /* pictures */
-.image {
-    padding: 10px;
+.image{
     transition: 3s;
-    border-radius: 10px;
-    height: 90%;
-    width: auto;
+    border-radius: 20px;
+    overflow: hidden;
+    padding: 10px;
 }
 
 .image:hover {
@@ -112,7 +116,7 @@ body {
 html {
   height: 100%;
   background: radial-gradient(#1b2735 0%, #090a0f 100%);
-  overflow:hidden;
+  overflow:auto;
 }
 
 #stars {
