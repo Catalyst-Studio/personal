@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html  id="background">
 <head>
     <title>Lawrence Burton</title>
     <meta charset="UTF-8">
@@ -11,6 +11,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
+    <script src="assets/three.min.js"></script>
+    <script src="assets/vanta.wave.min.js"></script>
 </head>
 <body>
 <div class="navbar">
@@ -27,6 +29,22 @@
 </div>
 <div class="second">
 <h3>Hobbies</h3>
-<a class="left"><img class="image" src="images/20201108_134146.jpg"></a>
+<img class="image" src="images/20201108_134146.jpg" width="20%" height="auto">
 </div>
+</body>
+<script>
+    VANTA.WAVES({
+      el: "#background",
+      mouseControls: true,
+      touchControls: true,
+      gyroControls: false,
+      minHeight: 200.00,
+      minWidth: 200.00,
+      scale: 1.00,
+      scaleMobile: 1.00,
+      color: 0x1a1a25,
+      shininess: 0.00
+    })
+    </script>
+</script>
 </html>
