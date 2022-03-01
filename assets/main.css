@@ -7,6 +7,7 @@
 body {
     font-family: 'Rubik', sans-serif;
     text-align: center;
+    color: #A7BDCF;
 }
 /* Navbar links */
 .navbar a {
@@ -48,7 +49,7 @@ body {
 
 /* second level */
 .second {
-  background-color: rgba(0,0,0,.3);
+  background-color: #00000080;
   border-radius: 10px;
 }
 
@@ -70,17 +71,10 @@ body {
 .image{
     transition: 3s;
     border-radius: 20px;
-    height: 20%;
-    width: auto;
-    overflow: hidden;
     padding: 10px;
+    text-align: left;
 }
 
-.image:hover {
-    transition: 3s;
-    height: 100%;
-    width: auto;
-}
 /* typer */
 .container p span.cursor {
   display: inline-block;
