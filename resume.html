@@ -25,8 +25,21 @@
     <h1>About</h1>
     <p>I am a <span class="typed-text"></p>
 </div>
-<div id='stars'></div>
-<div id='stars2'></div>
-<div id='stars3'></div>
 </body>
+<script src="assets/three.min.js"></script>
+<script src="assets/vanta.wave.min.js"></script>
+<script>
+    VANTA.WAVES({
+      el: "#background",
+      mouseControls: true,
+      touchControls: true,
+      gyroControls: false,
+      minHeight: 200.00,
+      minWidth: 200.00,
+      scale: 1.00,
+      scaleMobile: 1.00,
+      color: 0x1a1a25,
+      shininess: 0.00
+    })
+    </script>
 </html>
