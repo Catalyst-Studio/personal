@@ -20,6 +20,15 @@ body {
   border-radius: 5px;
 }
 
+.box-center {
+  display: block;
+  height: auto;
+  width: 70%;
+  transition: .3s;
+  align-self:center;
+  border-radius: 5px;
+}
+
 .box embed {
   display: block;
   height: auto;
