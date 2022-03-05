@@ -48,7 +48,7 @@ body {
 }
 
 .box img:hover {
-  background-color: #FFFFFF10;
+  border-color: #FFFFFF10;
   width: 35%;
 }
 
