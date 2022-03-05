@@ -38,6 +38,15 @@ body {
   border-radius: 5px;
 }
 
+.box img {
+  display: block;
+  height: auto;
+  width: 10%;
+  transition: .3s;
+  align-self:center;
+  border-radius: 5px;
+}
+
 .box:hover {
   font-size: 110%;
   background-color: #FFFFFF10;
