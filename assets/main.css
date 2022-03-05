@@ -47,6 +47,11 @@ body {
   border-radius: 5px;
 }
 
+.box img:hover {
+  background-color: #FFFFFF10;
+  width: 35%;
+}
+
 .box:hover {
   font-size: 110%;
   background-color: #FFFFFF10;
