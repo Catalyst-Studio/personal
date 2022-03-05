@@ -38,16 +38,13 @@ body {
   border-radius: 5px;
 }
 
-.box img {
+.box-img {
   display: block;
   height: auto;
   width: 30%;
   transition: .3s;
   align-self:center;
   border-radius: 5px;
-}
-.box img:hover {
-  width: 35%;
 }
 .box:hover {
   font-size: 110%;
