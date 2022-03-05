@@ -41,7 +41,7 @@ body {
 .box img {
   display: block;
   height: auto;
-  width: 10%;
+  width: 30%;
   transition: .3s;
   align-self:center;
   border-radius: 5px;
