@@ -15,7 +15,6 @@ body {
   height: auto;
   width: 70%;
   transition: .3s;
-  float: right;
   align-self:center;
   border-radius: 5px;
 }
@@ -46,12 +45,7 @@ body {
   align-self:center;
   border-radius: 5px;
 }
-.box:hover {
-  font-size: 110%;
-  background-color: #FFFFFF10;
-  width: 75%;
 
-}
 /* Navbar links */
 .navbar a {
   text-align: center;
