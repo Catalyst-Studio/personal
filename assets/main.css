@@ -17,6 +17,7 @@ body {
   transition: .3s;
   align-self:center;
   border-radius: 5px;
+  display: inline-block;
 }
 
 .box-center {
