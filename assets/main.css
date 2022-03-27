@@ -4,6 +4,19 @@
   padding: 14px;
 }
 
+
+/*Use this class when you want your content to be hidden*/
+.BeforeScroll
+{
+  display: none;
+}
+
+
+/*Use this class when you want your content to be shown after some scroll*/
+.AfterScroll
+{
+  display: block;
+}
 body {
     font-family: 'Rubik', sans-serif;
     text-align: center;
