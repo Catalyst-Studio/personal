@@ -715,6 +715,7 @@ stroke-dashoffset:0
   position: absolute;
   left: 0;
   top: 0;
+  stroke: #A7BDCF;
   transform: rotate(-90deg);
   -webkit-transform: rotate(-90deg);
   -moz-transform: rotate(-90deg);
