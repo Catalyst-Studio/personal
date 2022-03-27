@@ -715,7 +715,6 @@ stroke-dashoffset:0
   position: absolute;
   left: 0;
   top: 0;
-  stroke: #A7BDCF;
   transform: rotate(-90deg);
   -webkit-transform: rotate(-90deg);
   -moz-transform: rotate(-90deg);
@@ -725,7 +724,7 @@ stroke-dashoffset:0
   fill: none;
   stroke-width: 25;
   stroke-dasharray: 629;
-  stroke: rgba(255, 255, 255, 0.0);
+  stroke: rgba(255, 255, 255, 0.9);
   -webkit-animation: load 4s;
   -moz-animation: load 4s;
   -o-animation: load 4s;
