@@ -687,7 +687,7 @@ stroke-dashoffset:0
   display: inline-block;
   position: relative;
   text-align: center;
-  color: #ffffff00;
+  color: #A7BDCF;
   font-weight: 100;
   margin: 2rem;
 }
@@ -725,10 +725,10 @@ stroke-dashoffset:0
   stroke-width: 25;
   stroke-dasharray: 629;
   stroke: rgba(255, 255, 255, 0.9);
-  -webkit-animation: load 10s;
-  -moz-animation: load 10s;
-  -o-animation: load 10s;
-  animation: load 10s;
+  -webkit-animation: load 4s;
+  -moz-animation: load 4s;
+  -o-animation: load 4s;
+  animation: load 4s;
 }
 
 /* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
