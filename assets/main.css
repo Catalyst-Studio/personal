@@ -687,7 +687,7 @@ stroke-dashoffset:0
   display: inline-block;
   position: relative;
   text-align: center;
-  color: #93A2AC;
+  color: #ffffff00;
   font-weight: 100;
   margin: 2rem;
 }
@@ -724,7 +724,7 @@ stroke-dashoffset:0
   fill: none;
   stroke-width: 25;
   stroke-dasharray: 629;
-  stroke: rgba(255, 255, 255, 0.9);
+  stroke: rgba(255, 255, 255, 0.0);
   -webkit-animation: load 10s;
   -moz-animation: load 10s;
   -o-animation: load 10s;
