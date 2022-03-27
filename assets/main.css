@@ -20,6 +20,10 @@ body {
   display: inline-block;
 }
 
+.box:hover {
+  background-color: #ffffff10;
+}
+
 .box-center {
   display: block;
   height: auto;
