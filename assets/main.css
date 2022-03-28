@@ -693,7 +693,7 @@ ul.actions {
 
 .skills .skill .skill-bar {
    width: 0;
-   height: 6px;
+   height: 8px;
    background: #A7BDCF;
    transition: 1s cubic-bezier(1, 0, .5, 1);
    -webkit-transition: 1s cubic-bezier(1, 0, .5, 1);
@@ -708,7 +708,7 @@ ul.actions {
    float: left;
    width: 0%;
    background: #1D91F2;
-   height: 6px;
+   height: 8px;
    position: relative;
    transition: 1s cubic-bezier(1, 0, .5, 1);
    -webkit-transition: 1s cubic-bezier(1, 0, .5, 1);
