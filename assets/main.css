@@ -708,7 +708,7 @@ ul.actions {
 .skills .skill .skill-bar span {
    float: left;
    width: 0%;
-   background: #1D91F2;
+   background: #233f57;
    height: 8px;
    position: relative;
    transition: 1s cubic-bezier(1, 0, .5, 1);
