@@ -673,7 +673,7 @@ ul.actions {
 .skills .skill .skill-bar {
    width: 100%;
    float: left;
-   border-radius: 4px;
+   border-radius: 7px;
 }
 
 .skills {
@@ -714,7 +714,7 @@ ul.actions {
    transition: 1s cubic-bezier(1, 0, .5, 1);
    -webkit-transition: 1s cubic-bezier(1, 0, .5, 1);
    -ms-transition: 1s cubic-bezier(1, 0, .5, 1);
-   border-radius: 4px;
+   border-radius: 7px;
 }
 
 .skills .skill .skill-bar span b {
