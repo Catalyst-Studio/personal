@@ -682,6 +682,7 @@ ul.actions {
 
 .skills .skill {
    margin-bottom: 30px;
+   display: inline-block;
 }
 
 .skills .skill .skill-title {
