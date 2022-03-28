@@ -673,6 +673,7 @@ ul.actions {
 .skills .skill .skill-bar {
    width: 100%;
    float: left;
+   border-radius: 5px;
 }
 
 .skills {
@@ -684,7 +685,7 @@ ul.actions {
 }
 
 .skills .skill .skill-title {
-   color: #808080;
+   color: #A7BDCF;
    margin-bottom: 10px;
    font-weight: 400;
    font-size: 14px;
@@ -693,7 +694,7 @@ ul.actions {
 .skills .skill .skill-bar {
    width: 0;
    height: 6px;
-   background: #f0f0f0;
+   background: #A7BDCF;
    transition: 1s cubic-bezier(1, 0, .5, 1);
    -webkit-transition: 1s cubic-bezier(1, 0, .5, 1);
    -ms-transition: 1s cubic-bezier(1, 0, .5, 1);
