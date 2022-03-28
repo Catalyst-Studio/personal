@@ -713,6 +713,8 @@ ul.actions {
    transition: 1s cubic-bezier(1, 0, .5, 1);
    -webkit-transition: 1s cubic-bezier(1, 0, .5, 1);
    -ms-transition: 1s cubic-bezier(1, 0, .5, 1);
+   border-radius: 5px;
+   padding: 2px;
 }
 
 .skills .skill .skill-bar span b {
