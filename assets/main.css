@@ -761,6 +761,7 @@ ul.actions {
 
 .card:hover {
   background-color: #ffffff10;
+  transition: .3s;
 }
 /* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
 @media screen and (max-width: 500px) {
