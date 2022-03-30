@@ -754,7 +754,7 @@ ul.actions {
 }
 
 .card {
-  height: 200px;
+  height: auto;
   width: auto;
   border-radius: 20px;
 }
