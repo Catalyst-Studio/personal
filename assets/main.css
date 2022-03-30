@@ -760,6 +760,14 @@ ul.actions {
   transition: .3s;
 }
 
+.card p {
+  padding: 5%;
+}
+
+.card h3 {
+  padding: 5%;
+}
+
 .card:hover {
   background-color: #ffffff10;
 }
