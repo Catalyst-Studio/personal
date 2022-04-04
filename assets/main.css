@@ -749,8 +749,9 @@ ul.actions {
 
 /* card */
 .card-wrapper {
-  display: inline-block;
+  display:inline;
   padding: 5%;
+  text-decoration: none;
 }
 
 .card {
