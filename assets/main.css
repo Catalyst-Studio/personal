@@ -759,18 +759,22 @@ ul.actions {
   width: auto;
   border-radius: 20px;
   transition: .3s;
+  text-decoration: none;
 }
 
 .card p {
   padding: 5%;
+  text-decoration: none;
 }
 
 .card h3 {
   padding: 5%;
+  text-decoration: none;
 }
 
 .card:hover {
   background-color: #ffffff10;
+  text-decoration: none;
 }
 /* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
 @media screen and (max-width: 500px) {
