@@ -772,9 +772,13 @@ ul.actions {
   text-decoration: none;
 }
 
+.card a {
+  text-decoration: none;
+}
+
 .card:hover {
   background-color: #ffffff10;
-  text-decoration: none;
+  text-decoration:none;
 }
 /* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
 @media screen and (max-width: 500px) {
