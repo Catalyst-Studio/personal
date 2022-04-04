@@ -749,7 +749,7 @@ ul.actions {
 
 /* card */
 .card-wrapper {
-  display:inline;
+  display:inline-block;
   padding: 5%;
   text-decoration: none;
 }
