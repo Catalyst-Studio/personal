@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html id="background-limited">
+<html id="background-limited" lang="en" style="min-height: 100%">
 <head>
     <title>Lawrence Burton</title>
     <meta charset="UTF-8">
@@ -7,7 +7,7 @@
     <meta name="keywords" content="" />
     <script src="https://kit.fontawesome.com/6d22aa47aa.js" crossorigin="anonymous"></script>
     <link href="assets/main.css" rel="stylesheet">
-    <script src="assets/typer.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
@@ -23,9 +23,14 @@
 </div>
 <div class="header">
     <h1>Resume</h1>
-    <p>All of my proggress and skills<span class="typed-text"></p>
+    <p>All of my proggress and skills<span class="typed-text"></span></p>
 </div>
 <div class="second">
+    <div style="padding-left: 15rem; padding-right: 15rem;">
+    <div class="box-img">
+        <h1 class="box">Lawrence Burton</h1>
+        <img class="s-25" src="images/IMG_1240.JPG">
+    </div>
     <div class="container-skill">
         <div class="skills">
            <!-- skill -->
@@ -130,6 +135,7 @@
            <!-- #skill -->
         </div>
         </div>
+    </div>
 </div>
 </body>
 <script src="assets/three.min.js"></script>
@@ -146,17 +152,23 @@
        $(".skills .skill .skill-bar span b").animate({"opacity":"1"},1000);
     }, 2000);</script>
 <script>
-    VANTA.WAVES({
-      el: "#background-limited",
-      mouseControls: true,
-      touchControls: true,
-      gyroControls: false,
-      minHeight: 200.00,
-      minWidth: 200.00,
-      scale: 1.00,
-      scaleMobile: 1.00,
-      color: 0x1a1a25,
-      shininess: 0.00
-    })
-    </script>
+    ScrollReveal().reveal('.skill', { reset: true })
+    ScrollReveal().reveal('.box-img', { reset: true })
+</script>
+<script async>
+    window.onload = (event) => {
+        VANTA.WAVES({
+            el: "#background-limited",
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: false,
+            minHeight: 200.00,
+            minWidth: 200.00,
+            scale: 1.00,
+            scaleMobile: 1.00,
+            color: 0x1a1a25,
+            shininess: 0.00
+        })
+    }
+</script>
 </html>

@@ -7,7 +7,7 @@
     <meta name="keywords" content="" />
     <script src="https://kit.fontawesome.com/6d22aa47aa.js" crossorigin="anonymous"></script>
     <link href="assets/main.css" rel="stylesheet">
-    <script src="assets/typer.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
@@ -82,16 +82,16 @@
 <div class="stage">
   <div class="container">
     <div class="ring">
-      <div style="position: absolute;" class="img"></div>
-      <div style="position: absolute;" class="img"></div>
-      <div style="position: absolute;" class="img"></div>
-      <div style="position: absolute;" class="img"></div>
-      <div style="position: absolute;" class="img"></div>
-      <div style="position: absolute;" class="img"></div>
-      <div style="position: absolute;" class="img"></div>
-      <div style="position: absolute;" class="img"></div>
-      <div style="position: absolute;" class="img"></div>
-      <div style="position: absolute;" class="img"></div>
+      <div style="position: absolute;border-radius: 20px;" class="img"></div>
+      <div style="position: absolute;border-radius: 20px;" class="img"></div>
+      <div style="position: absolute;border-radius: 20px;" class="img"></div>
+      <div style="position: absolute;border-radius: 20px;" class="img"></div>
+      <div style="position: absolute;border-radius: 20px;" class="img"></div>
+      <div style="position: absolute;border-radius: 20px;" class="img"></div>
+      <div style="position: absolute;border-radius: 20px;" class="img"></div>
+      <div style="position: absolute;border-radius: 20px;" class="img"></div>
+      <div style="position: absolute;border-radius: 20px;" class="img"></div>
+      <div style="position: absolute;border-radius: 20px;" class="img"></div>
     </div>
   </div>
 </div>
@@ -102,18 +102,23 @@
 <script src="assets/three.min.js"></script>
 <script src="assets/vanta.wave.min.js"></script>
 <script>
-    VANTA.WAVES({
-      el: "#background-limited",
-      mouseControls: true,
-      touchControls: true,
-      gyroControls: false,
-      minHeight: 200.00,
-      minWidth: 200.00,
-      scale: 1.00,
-      scaleMobile: 1.00,
-      color: 0x1a1a25,
-      shininess: 0.00
-    })
+    window.onload = (event) => {
+        VANTA.WAVES({
+            el: "#background-limited",
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: false,
+            minHeight: 200.00,
+            minWidth: 200.00,
+            scale: 1.00,
+            scaleMobile: 1.00,
+            color: 0x1a1a25,
+            shininess: 0.00
+        })
+    }
     </script>
+<script>
+    ScrollReveal().reveal('.box', { reset: true })
+    ScrollReveal().reveal('.stage', { reset: true })
 </script>
 </html>
