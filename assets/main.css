@@ -105,7 +105,7 @@ html {
   transition: 0.3s;
 }
 
-.link:hover {
+.link {
   color: #6c7a86;
 }
 
@@ -749,7 +749,6 @@ ul.actions {
 
 /* card */
 .card-wrapper {
-  display:inline-block;
   padding: 5%;
   text-decoration: none;
 }
@@ -759,6 +758,7 @@ ul.actions {
   width: auto;
   border-radius: 20px;
   transition: .3s;
+  display: inline-block;
   text-decoration: none;
 }
 
