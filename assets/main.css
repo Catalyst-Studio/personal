@@ -756,6 +756,7 @@ ul.actions {
 .card {
   height: auto;
   width: auto;
+  min-width: 15rem;
   border-radius: 20px;
   transition: .3s;
   display: inline-block;
@@ -763,12 +764,12 @@ ul.actions {
 }
 
 .card p {
-  padding: 5%;
+  padding: 3%;
   text-decoration: none;
 }
 
 .card h3 {
-  padding: 5%;
+  padding: 3%;
   text-decoration: none;
 }
 
