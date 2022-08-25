@@ -96,6 +96,19 @@ html {
   transition: 0.3s;
 }
 
+.link {
+  text-align: center;
+  padding: 13px;
+  color: #A7BDCF;
+  text-decoration: none;
+  font-size: 17px;
+  transition: 0.3s;
+}
+
+.link:hover {
+  color: #6c7a86;
+}
+
 /* Navbar links on mouse-over */
 .navbar a:hover {
   color: #6c7a86;
