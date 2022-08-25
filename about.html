@@ -49,6 +49,9 @@
       }</style>
 </head>
 <body>
+<div id='stars'></div>
+<div id='stars2'></div>
+<div id='stars3'></div>
 <div class="navbar">
     <a href="/"><i class="fa fa-fw fa-home"></i> Home</a>
     <a href="/about.html"><i class="fa fa-fw fa-user"></i> About Me</a>
@@ -101,22 +104,6 @@
 <script src="assets/picture.js"></script>
 <script src="assets/three.min.js"></script>
 <script src="assets/vanta.wave.min.js"></script>
-<script>
-    window.onload = (event) => {
-        VANTA.WAVES({
-            el: "#background-limited",
-            mouseControls: true,
-            touchControls: true,
-            gyroControls: false,
-            minHeight: 200.00,
-            minWidth: 200.00,
-            scale: 1.00,
-            scaleMobile: 1.00,
-            color: 0x1a1a25,
-            shininess: 0.00
-        })
-    }
-    </script>
 <script>
     ScrollReveal().reveal('.box', { reset: true })
     ScrollReveal().reveal('.stage', { reset: true })
