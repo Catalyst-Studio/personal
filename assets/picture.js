@@ -15,6 +15,7 @@ gsap.timeline()
       opacity:0,
       stagger:0.1,
       ease:'expo',
+      filter: 'grayscale(100%)'
     })
     .add(()=>{
       $('.img').on('mouseenter', (e)=>{
