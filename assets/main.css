@@ -160,6 +160,15 @@ html {
   filter: grayscale(0%);
 }
 
+.img {
+  filter: grayscale(100%);
+  transition: .3s;
+}
+
+.img:hover {
+  filter: grayscale(0%);
+}
+
 .second p.right {
   float: right;
 }
