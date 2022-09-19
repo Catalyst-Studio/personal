@@ -801,7 +801,6 @@ ul.actions {
 
 .s-25 {
   height: 25rem;
-  width: auto;
 }
 /* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
 @media screen and (max-width: 500px) {
@@ -875,4 +874,3 @@ ul.actions {
   background: transparent;
   box-shadow: 538px 271px #FFF , 74px 803px #FFF , 1275px 501px #FFF , 1357px 124px #FFF , 1030px 764px #FFF , 400px 313px #FFF , 1782px 454px #FFF , 1129px 942px #FFF , 1525px 301px #FFF , 1088px 1084px #FFF , 1218px 1043px #FFF , 849px 153px #FFF , 1882px 1147px #FFF , 897px 1659px #FFF , 949px 1593px #FFF , 19px 513px #FFF , 876px 1263px #FFF , 1518px 966px #FFF , 869px 1140px #FFF , 1919px 1282px #FFF , 23px 797px #FFF , 1922px 598px #FFF , 1782px 1143px #FFF , 539px 1691px #FFF , 1763px 777px #FFF , 1187px 1834px #FFF , 626px 54px #FFF , 1854px 723px #FFF , 1718px 862px #FFF , 1696px 994px #FFF , 1941px 640px #FFF , 455px 1568px #FFF , 635px 1426px #FFF , 1839px 1131px #FFF , 1535px 1765px #FFF , 316px 1833px #FFF , 410px 1605px #FFF , 889px 512px #FFF , 1784px 818px #FFF , 1947px 829px #FFF , 1171px 1009px #FFF , 1772px 1367px #FFF , 1645px 110px #FFF , 1186px 1930px #FFF , 867px 1085px #FFF , 245px 1716px #FFF , 1645px 577px #FFF , 1545px 743px #FFF , 331px 1226px #FFF , 814px 237px #FFF , 655px 434px #FFF , 1206px 1875px #FFF , 1867px 1438px #FFF , 451px 470px #FFF , 922px 1312px #FFF , 1245px 1451px #FFF , 439px 829px #FFF , 563px 1024px #FFF , 856px 757px #FFF , 1675px 847px #FFF , 1670px 1346px #FFF , 412px 776px #FFF , 955px 500px #FFF , 773px 100px #FFF , 1196px 1337px #FFF , 1155px 38px #FFF , 1278px 1384px #FFF , 1046px 1163px #FFF , 257px 1150px #FFF , 809px 918px #FFF , 608px 1044px #FFF , 220px 1376px #FFF , 1469px 972px #FFF , 284px 978px #FFF , 1062px 1758px #FFF , 1604px 1454px #FFF , 347px 387px #FFF , 160px 304px #FFF , 297px 165px #FFF , 1781px 1626px #FFF , 1911px 529px #FFF , 1776px 614px #FFF , 1514px 24px #FFF , 1801px 668px #FFF , 1048px 853px #FFF , 1949px 708px #FFF , 1850px 1107px #FFF , 285px 916px #FFF , 1171px 229px #FFF , 674px 1674px #FFF , 1626px 1931px #FFF , 234px 1487px #FFF , 1712px 9px #FFF , 98px 1802px #FFF , 1900px 228px #FFF , 298px 875px #FFF , 531px 1039px #FFF , 462px 92px #FFF , 1084px 345px #FFF , 625px 1203px #FFF;
 }
-
