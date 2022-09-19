@@ -153,6 +153,11 @@ html {
   opacity: 100%;
   float: left;
   border-radius: 20px;
+  filter: grayscale(100%);
+}
+
+.second img:hover {
+  filter: grayscale(0%);
 }
 
 .second p.right {
