@@ -7,21 +7,19 @@ gsap.timeline()
       z: -1200,
       backgroundImage:(i)=>'url(images/'+(i+1)+'.jpg)',
       backgroundPosition:(i)=>getBgPos(i),
-      backfaceVisibility:'hidden',
-      filter: 'grayscale(0%)'
+      backfaceVisibility:'hidden'
     })
     .from('.img', {
       duration:1.5,
       y:200,
       opacity:0,
       stagger:0.1,
-      ease:'expo',
-      filter: 'grayscale(100%)'
+      ease:'expo'
     })
     .add(()=>{
       $('.img').on('mouseenter', (e)=>{
         let current = e.currentTarget;
-        gsap.to('.img', {opacity:(i,t)=>(t==current)? 1:0.5, ease:'power3', filter: 'grayscale(100%)'})
+        gsap.to('.img', {opacity:(i,t)=>(t==current)? 1:0.5, ease:'power3', filter:(i,t)=>(t==current)? 'grayscale(100%)grayscale(0%)':'grayscale(0%)'})
       })
       $('.img').on('mouseleave', (e)=>{
         gsap.to('.img', {opacity:1, ease:'power2.inOut', filter: 'grayscale(100%)'})
