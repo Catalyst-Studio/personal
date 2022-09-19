@@ -9,7 +9,7 @@ gsap.timeline()
       backgroundPosition:(i)=>getBgPos(i),
       backfaceVisibility:'hidden'
     })
-    document.getElementsByClassName("img").style.webkitFilter = "grayscale(100%)"
+    document.getElementsByClassName("img").style.filter = "grayscale(100%)"
     .from('.img', {
       duration:1.5,
       y:200,
