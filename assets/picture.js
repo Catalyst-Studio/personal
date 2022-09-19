@@ -23,7 +23,7 @@ gsap.timeline()
         gsap.to('.img', {opacity:(i,t)=>(t==current)? 1:0.5, ease:'power3', filter: 'grayscale(100%)'})
       })
       $('.img').on('mouseleave', (e)=>{
-        gsap.to('.img', {opacity:1, ease:'power2.inOut', filter: 'grayscale(100%)'})
+        gsap.to('.img', {opacity:1, ease:'power2.inOut', filter: 'grayscale(0%)'})
       })
     }, '-=0.5')
 
