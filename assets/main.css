@@ -162,7 +162,7 @@ html {
 
 .img {
   filter: grayscale(100%);
-  transition: .3s;
+  transition: .3s linear;
 }
 
 .img:hover {
