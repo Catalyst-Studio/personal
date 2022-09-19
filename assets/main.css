@@ -796,6 +796,11 @@ ul.actions {
   text-decoration:none;
 }
 
+/* Cursor */
+
+.notCursor {
+  cursor: none;
+}
 
 /* sizing */
 
