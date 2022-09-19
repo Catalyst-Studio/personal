@@ -801,8 +801,7 @@ ul.actions {
 
 .s-25 {
   height: 25rem;
-  width: 25rem;
-  max-width: 25rem;
+  width: auto;
 }
 /* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
 @media screen and (max-width: 500px) {
