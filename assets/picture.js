@@ -33,7 +33,7 @@ $(window).on('mouseup touchend', dragEnd);
 function dragStart(e){ 
   if (e.touches) e.clientX = e.touches[0].clientX;
   xPos = Math.round(e.clientX);
-  gsap.set('.ring', {cursor:'grabbing'})
+  gsap.set('.ring', {})
   $(window).on('mousemove touchmove', drag);
 }
 
