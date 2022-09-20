@@ -78,7 +78,7 @@ html {
 }
 
 .box-img {
-  display: block;
+  display: inline-block;
   height: auto;
   width: 30%;
   transition: .3s;
