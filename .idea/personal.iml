@@ -15,5 +15,14 @@
     <orderEntry type="library" name="zepto" level="application" />
     <orderEntry type="library" name="modernizr" level="application" />
     <orderEntry type="library" name="three.js" level="application" />
+    <orderEntry type="library" name="jquery" level="application" />
+    <orderEntry type="library" name="three.js" level="application" />
+    <orderEntry type="library" name="vanta" level="application" />
+    <orderEntry type="library" name="6d22aa47aa" level="application" />
+    <orderEntry type="library" name="kursor" level="application" />
+    <orderEntry type="library" name="modernizr" level="application" />
+    <orderEntry type="library" name="scrollreveal" level="application" />
+    <orderEntry type="library" name="zepto" level="application" />
+    <orderEntry type="library" name="gsap" level="application" />
   </component>
 </module>
